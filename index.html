@@ -2,58 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Nature's Beauty</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome to My Website</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(120deg, #f6d365, #fda085);
       margin: 0;
-      padding: 0;
-      color: #333;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
       text-align: center;
     }
-    .container {
-      padding: 100px 20px;
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px;
     }
+
     h1 {
-      font-size: 50px;
-      margin-bottom: 20px;
+      font-size: 60px;
+      margin: 0;
     }
+
     p {
-      font-size: 20px;
-      margin-top: 0;
+      font-size: 24px;
+      max-width: 600px;
+      margin: 20px auto;
     }
+
     .btn {
-      display: inline-block;
-      padding: 12px 25px;
+      background-color: #4CAF50;
+      border: none;
+      padding: 12px 30px;
       font-size: 18px;
       color: white;
-      background-color: #ff7f50;
-      border: none;
       border-radius: 5px;
       text-decoration: none;
-      margin-top: 20px;
+      transition: background-color 0.3s;
     }
+
     .btn:hover {
-      background-color: #e7663f;
+      background-color: #45a049;
     }
+
     footer {
-      margin-top: 80px;
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
       font-size: 14px;
-      color: #555;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🎉 CI/CD Deployed Successfully!</h1>
-    <p>This website is automatically deployed using GitHub + Jenkins + AWS EC2!</p>
-    <a class="btn" href="https://github.com/" target="_blank">Visit My GitHub</a>
+  <div class="overlay">
+    <h1>Welcome to Nature</h1>
+    <p>Experience the calm, peace, and beauty of nature — deployed using CI/CD pipeline.</p>
+    <a class="btn" href="https://github.com/" target="_blank">Visit GitHub</a>
   </div>
   <footer>
-    &copy; 2025 My First CI/CD Project
+    &copy; 2025 Nature Theme | CI/CD Project
   </footer>
 </body>
 </html>
-
