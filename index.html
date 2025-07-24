@@ -2,71 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nature's Beauty</title>
+  <title>Flipkart Clone - Static Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      text-align: center;
+      background-color: #f1f3f6;
     }
-
-    .overlay {
-      background: rgba(0, 0, 0, 0.6);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 20px;
-    }
-
-    h1 {
-      font-size: 60px;
-      margin: 0;
-    }
-
-    p {
-      font-size: 24px;
-      max-width: 600px;
-      margin: 20px auto;
-    }
-
-    .btn {
-      background-color: #4CAF50;
-      border: none;
-      padding: 12px 30px;
-      font-size: 18px;
+    .navbar {
+      background-color: #2874f0;
+      padding: 10px 20px;
       color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-
-    .btn:hover {
-      background-color: #45a049;
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
     }
-
-    footer {
-      position: absolute;
-      bottom: 10px;
+    .search-box input {
+      padding: 8px;
+      width: 300px;
+      border: none;
+      border-radius: 4px;
+    }
+    .login-btn {
+      background-color: white;
+      color: #2874f0;
+      padding: 6px 14px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .banner {
       width: 100%;
-      font-size: 14px;
-      color: #ccc;
+      height: 250px;
+      background: url('https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/update_homepage_banner.jpg') no-repeat center center/cover;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .card {
+      background-color: white;
+      width: 200px;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card .content {
+      padding: 10px;
+    }
+    .card .content h3 {
+      font-size: 16px;
+      margin: 5px 0;
+    }
+    .card .content p {
+      color: green;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2874f0;
+      color: white;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>Welcome to Nature</h1>
-    <p>Experience the calm, peace, and beauty of nature — deployed using CI/CD pipeline.</p>
-    <a class="btn" href="https://github.com/" target="_blank">Visit GitHub</a>
+
+  <div class="navbar">
+    <div class="logo">Flipkart</div>
+    <div class="search-box">
+      <input type="text" placeholder="Search for products, brands and more">
+    </div>
+    <button class="login-btn">Login</button>
   </div>
+
+  <div class="banner"></div>
+
+  <div class="products">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1d1" alt="Phone">
+      <div class="content">
+        <h3>Smartphone</h3>
+        <p>₹14,999</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Laptop">
+      <div class="content">
+        <h3>Laptop</h3>
+        <p>₹49,999</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1588702547923-7093a6c3ba33" alt="Shoes">
+      <div class="content">
+        <h3>Running Shoes</h3>
+        <p>₹1,299</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1593032465171-bd5baf37de27" alt="Watch">
+      <div class="content">
+        <h3>Smart Watch</h3>
+        <p>₹2,499</p>
+      </div>
+    </div>
+  </div>
+
   <footer>
-    &copy; 2025 Nature Theme | CI/CD Project
+    &copy; 2025 Flipkart Clone | Created for CI/CD Demo
   </footer>
+
 </body>
 </html>
